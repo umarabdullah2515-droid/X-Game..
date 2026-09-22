@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>💠PGC shooting game🔱</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- LOGIN -->
+<div id="loginScreen">
+
+    <div class="loginBox">
+
+        <h1>🔐 PGC KE GUNDE</h1>
+        <h2>Login Required</h2>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Password"
+        >
+
+        <button onclick="loginGame()">
+            LOGIN
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </div>
+
+</div>
+<div id="menu">
+    <h1>⚜️PGC SHOOTING GAME♦️</h1>
+
+    <h2>🗡Select Warrior🗡</h2>
+
+    <div class="characters">
+        <button onclick="selectCharacter('Umar')">♕Umar♕</button>
+        <button onclick="selectCharacter('Abdullah')">♛Abdullah♛</button>
+        <button onclick="selectCharacter('Hammad')">💯Hammad💯</button>
+        <button onclick="selectCharacter('Mani')">♞Mani♞</button>
+        <button onclick="selectCharacter('Hazqeel')">⛓️‍💥Hazqeel⛓️‍💥</button>
+        <button onclick="selectCharacter('Qasim')">🏴Qasim🏴</button>
+        <button onclick="selectCharacter('Azan')">💲Azan💲</button>
+    </div>
+
+    <h3 id="selected">No character selected</h3>
+    <h4 id="abilityPreview" class="abilityPreview"></h4>
+    <button id="start" onclick="startGame()" disabled>
+        START GAME
+    </button>
+</div>
+
+
+<div id="game">
+
+    <div id="info">
+        <span id="name">Player</span>
+        <span>❤️ <b id="health">11000</b></span>
+        <span>🏆 <b id="score">0</b></span>
+        <span id="dashStatus"></span>
+    </div>
+
+    <div id="player">
+        🧍
+        <div id="gun">🔫</div>
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
